@@ -1,4 +1,4 @@
-class_name TileProcessing
+const LinesToPolygonsConverter = preload ("./LinesToPolygonsConverter.gd")
 
 var _task_queue = []
 var _mutex: Mutex

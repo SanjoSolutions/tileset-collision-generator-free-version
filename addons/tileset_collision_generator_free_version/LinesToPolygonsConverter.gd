@@ -1,5 +1,3 @@
-class_name LinesToPolygonsConverter
-
 var _open_polygons
 var _closed_polygons
 var _polygon_open_points_to_polygon

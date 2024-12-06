@@ -1,10 +1,9 @@
 @tool
 extends EditorPlugin
 
-const LinesToPolygonsConverter = preload ("./LinesToPolygonsConverter.gd")
 const TileProcessing = preload("./TileProcessing.gd")
 
-var tile_processing: TileProcessing
+var tile_processing
 
 func _enter_tree():
 	if Engine.is_editor_hint():
@@ -73,6 +72,6 @@ func _auto_collision2(tile_set: TileSet):
 				dialog.dialog_text = "Some of the tileset images are wider or have a larger height than 240 pixel.\n The free version of this plugin only generates collision polygons for tileset images where the width is <= 240 pixel and height <= 240 pixel.\n The full version generates collision polygons for all tileset images."
 				dialog.ok_button_text = "Go to full version"
 				dialog.cancel_button_text = "Ok"
-				dialog.get_ok_button().pressed.connect(func (): OS.shell_open("https://sanjox.itch.io/godot-collision-generator"))
+				dialog.get_ok_button().pressed.connect(func(): OS.shell_open("https://sanjox.itch.io/godot-collision-generator"))
 				EditorInterface.popup_dialog_centered(dialog)
 				has_shown_free_version_limiations = true
