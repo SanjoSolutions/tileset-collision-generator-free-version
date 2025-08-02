@@ -27,8 +27,9 @@ The full version (which generates collision polygons for all images) can be boug
 
 ## How to use
 
-1. Select a TileSet file in the file browser in the Godot Editor.
-2. Open the command palette (Editor -> Command Palette... or Ctrl+Shift+P) and run the command "Generate collision".
+1. Select a TileSet file in the file browser in the Godot Editor.<br>
+   If you don't have a tile set file yet: After you have created a TileMapLayer and have created a new TileSet for it, it's required to save the tile set as a file. This can be one by clicking the "arrow down" button at the property "Tile Set" of the TileMapLayer (in the Inspector panel) and then selecting "Save as...". The file that is saved is the TileSet file that is required to be selected.
+3. Open the command palette (Editor -> Command Palette... or Ctrl+Shift+P) and run the command "Generate collision".
 
 You can check out the generated collision polygons by opening the tile set, activating "Paint" and selecting the first physics layer under "Paint Properties".
 
